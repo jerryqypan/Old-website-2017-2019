@@ -1,0 +1,3 @@
+-load images remotely?
+-need to fix collapse navbar
+-incorporate blog

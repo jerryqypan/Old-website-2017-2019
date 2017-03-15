@@ -1,3 +1,14 @@
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  font-size:18px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:transparent;
+}
+
 .navbar-default {
     top:0;
     border-style: none;
@@ -8,12 +19,6 @@
 .navbar-inverse{
     border-style:none;
 } 
-.navbar-nav > li{
-  padding-left:30px;
-  padding-right:30px;
-  font-weight:bold;
-  font-size:16px;
-}
 
 #headertext{
     font-size: 6em;
@@ -25,19 +30,19 @@
     font-size: 32px;
 }
 .wrapper{
-    background-color: #29506D;
-    color: #718EA4;
+    /*background-color: #29506D;
+    color: #718EA4;*/
+    padding-top:50px;
     padding-bottom:50px;
 
 }
 .wrapper1{
-    background-color: #496D89;
-    color: #123652;
-
+/*    background-color: #496D89;
+    color: #123652;*/
 }
 .wrapper4{
-    background-color: #000000;
-    color: #ffffff;
+/*    background-color: #000000;
+    color: #ffffff;*/
     padding-bottom:50px;
 
 }
@@ -45,11 +50,11 @@
     font-size:18px;
 }
 #About{
-    font-weight:bold;
+    /*//font-weight:bold;*/
     font-size:18px;
 }
 #Home{
-    font-family:Helvetica;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     position:relative;
     width:100%;
     margin-top:0px;
@@ -67,7 +72,7 @@
     color:white;
     text-align: center;
     max-height:50em;
-   
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #homepic{
     width:100%;
@@ -77,31 +82,23 @@
     
 
 }
-ul{
+#Contact ul{
     list-style: none;
     margin:0;
     padding:0;
 }
-li{
-   
+#Contact li{
     display:inline;
-}
+}*/
 
 body{ 
     padding-top: 0px;
  }
 
 
-#footer{
-    width:100%;
-    height:100px;
-    background-color:rgb(16,16,16);
-    color:white;
-    text-align: center;
-    font-size:10px;
-}
-#Contact{ 
+#Contact{
   text-align: center;
+  font-size:18px;
 }
 
 #pic1{
@@ -171,7 +168,7 @@ h2{
     margin-right:auto;
 }
 }
-@media (max-width: 767.5px) { /*need the .5 for somereason */
+@media (max-width: 767.5px) { need the .5 for somereason 
 .navbar-nav {
     margin: 0;
     padding: 7.5px 15px;

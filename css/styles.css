@@ -11,7 +11,7 @@
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
     background-color:grey;
 }
-.navbar-inverse .navbar-nav>li:hover {
+.navbar-inverse .navbar-nav>a:hover {
     text-decoration: underline;
 }
 

@@ -1,3 +1,3 @@
 -load images remotely?
--need to fix collapse navbar
+-need to fix button after click
 -incorporate blog

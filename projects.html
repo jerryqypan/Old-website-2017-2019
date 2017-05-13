@@ -5,19 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/grid12.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+
 	<title>Jerry Pan | Personal Website</title>
 </head>
 <body>
 	<nav class="cd-side-navigation">
 		<ul>
 			<li>
-				<a href="#0" class="selected" data-menu="index">
+				<a href="#0" data-menu="index">
 					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polygon fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2 3,10 3,23 9,23 9,16 15,16 15,23 21,23 21,10 " stroke-linejoin="miter"></polygon> </g></svg>
 					Intro
 				</a>
@@ -31,7 +30,7 @@
 			</li>
 
 			<li>
-				<a href="#0" data-menu="projects">
+				<a href="#0" class="selected" data-menu="projects">
 					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <rect x="1" y="1" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="22" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="5" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="14" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="5" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="14" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> </g></svg>
 					Projects
 				</a>
@@ -48,36 +47,70 @@
 	</nav> <!-- .cd-side-navigation -->
 	
 	<main class="cd-main">
-		<section class="cd-section index visible">
+		<section class="cd-section projects visible">
 			<header>
-				<div class="cd-title">
-					<h2>Jerry Pan</h2>
-					<h3>Duke computer science major</h3>
+				<div class="cd-title project-title">
+					<h2>Projects</h2>
+					<h3>I do cool things</h3>
 				</div>
-				<a href="#index-content" class="cd-scroll">Scroll Down</a>
-			</header>
-			<div class="cd-content" id="index-content">
-				<div class="photoContainer">
-					
-						<img id="photo" src="./img/profilepicture.png"/>
-				</div>
-				<p>
-					Hello, I am Jerry! I am a sophomore computer science major currently studying at Duke University. I am primarily interested in the fields of machine learning, big data, and virtual reality. I want to use machine learning and big data to solve challenging problems that we currently face. 
-				</p>
-				<p>
-					Some of the cool things I have done in the past include building a trash/recycling sorter, predicting wait times at Disney, and building a Covolutional Neural Network to predict handwritten digits. Check out all the cool things I have done in the <a class="projectsLink" href="#0" data-menu="projects">projects</a> section!
 
-				</p>
-					
-				<p>
-					In my free time, I like to play video games, watch anime, and take photos. I have played League of Legends for 5 years, but I haven't really played in the past year. Hopefully I can find a new game to replace it as my go to game to play. I also really like to take photos of the places I have visited, there are lots of breathtaking places in the world, and I would like to be able to explore all of them one day. All of the background photos for each section was taken by me (besides the Duke Class of 2019 photo, I was it the photo though!).
-				</p> 
-				
+				<a href="#projects-content" class="cd-scroll">Scroll Down</a>
+			</header>
+
+			<div class="cd-content" id="projects-content">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="paper project">
+							<img class="poster project" src="img/smartRecycler.jpg"/>
+							<h1 class="project">Smart Recycler</h1>
+							<h2>Python, OpenCV, Audrino, Microsoft CV API </h2>
+							<hr class="project"/>
+							<p> At HackDuke 2016, our team built a robot that seperated trash from recycable items using a webcam. I worked on the software of the project: developing the script to detect object placement, uploading the image to Microsoft CV API, and communicating with the audrino on how to sort. Check out the robot in action <a href="https://www.youtube.com/watch?v=HsMHaefJWgg" target="blank">here</a>. We won the best use of Microsoft API at HackDuke!</p>
+							<a href="https://devpost.com/software/test-5bj3ok" target="_blank" class="btn project">Read More</a>
+							<div class="space project"></div>
+						</div>
+					</div><!-- .col-md-6 -->
+					<div class="col-md-6">
+						<div class="paper project">
+							<img class="poster project" src="img/ieeeWebsite.jpg"/>
+							<h1 class="project">IEEE Website</h1>
+							<h2 class="project">Bootstrap, HTML, CSS, Javascript</h2>
+							<hr class="project"/>
+							<p class="project">I have been the Duke IEEE's webmaster since freshmen year, and my first goal as webmaster was to build a new Duke IEEE website. I used the creative Bootstrap template and it turned out really well, albeit the code is abit messy. The website is viewable <a href="https://dukeieee.github.io/" target="_blank">here</a>. Although the website is published, I am constantly updating the contents and adding new features!</p>
+							<a href="https://github.com/DukeIEEE/DukeIEEE.github.io" target="_blank" class="btn project">Read More</a>
+							<div class="space project"></div>
+						</div>
+					</div><!-- .col-md-6 -->
+				</div><!-- .row -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="paper project">
+							<img class="poster project" src="img/dataPlusPoster.jpg"/>
+							<h1 class="project">Smarter Routing in Theme Parks</h1>
+							<h2>R, Nodejs, MySQL</h2>
+							<hr class="project"/>
+							<p>Over the summer I participated in the Data+ program. My team's project was to predict the wait times in Disney world. I worked a lot on processing and filtering the data into a easily manipulatable format, and collecting additional data using Nodejs to scrape wait times from Disney and store the data into a local MySQL database.</p>
+							<a target="_blank" href="./pdf/poster.pdf" class="btn project">Read More</a>
+							<div class="space project"></div>
+						</div>
+					</div><!-- .col-md-6 -->
+					<div class="col-md-6">
+						<div class="paper project">
+							<img class="poster project" src="img/dukeTextbookExchange.jpg"/>
+							<h1 class="project">Duke Textbook Exchange</h1>
+							<h2 class="project">HTML, CSS, Javascript, SQL, PHP</h2>
+							<hr class="project"/>
+							<p class="project">For our final project in CS190s, my group built a website that facilitates the exchange of textbooks between students at Duke. The website allows students to create an account and post listings of textbooks they finished using and allows other students to search the listings and contact the seller of the textbook they want.</p>
+							<a target="_blank" href="https://github.com/cs-190/t2-IDK" class="btn project">Read More</a>
+							<div class="space project"></div>
+						</div>
+					</div><!-- .col-md-6 -->
+				</div><!-- .row -->
 			</div> <!-- .cd-content -->
 		</section> <!-- .cd-section -->
 	</main> <!-- .cd-main -->
 
-	<div id="cd-loading-bar" data-scale="1" class="index"></div> <!-- lateral loading bar -->
+	<div id="cd-loading-bar" data-scale="1" class="projects"></div> <!-- lateral loading bar -->
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->

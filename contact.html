@@ -17,7 +17,7 @@
 	<nav class="cd-side-navigation">
 		<ul>
 			<li>
-				<a href="#0" class="selected" data-menu="index">
+				<a href="#0" data-menu="index">
 					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polygon fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2 3,10 3,23 9,23 9,16 15,16 15,23 21,23 21,10 " stroke-linejoin="miter"></polygon> </g></svg>
 					Intro
 				</a>
@@ -38,7 +38,7 @@
 			</li>
 
 			<li>
-				<a href="#0" data-menu="contact">
+				<a href="#0" class="selected" data-menu="contact">
 					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 19,7 12,14 5,7 " stroke-linejoin="miter"></polyline> <rect x="1" y="3" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="18" stroke-linejoin="miter"></rect> <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="15" x2="5" y2="17" stroke-linejoin="miter"></line> <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="15" x2="19" y2="17" stroke-linejoin="miter"></line> </g></svg>
 					</svg>
 					Contact
@@ -48,36 +48,31 @@
 	</nav> <!-- .cd-side-navigation -->
 	
 	<main class="cd-main">
-		<section class="cd-section index visible">
+		<section class="cd-section contact visible">
 			<header>
-				<div class="cd-title">
-					<h2>Jerry Pan</h2>
-					<h3>Duke computer science major</h3>
+				<div class="cd-title contact-title">
+					<h2>Contact</h2>
+					<h3>Please no spam :(</h3>
 				</div>
-				<a href="#index-content" class="cd-scroll">Scroll Down</a>
-			</header>
-			<div class="cd-content" id="index-content">
-				<div class="photoContainer">
-					
-						<img id="photo" src="./img/profilepicture.png"/>
-				</div>
-				<p>
-					Hello, I am Jerry! I am a sophomore computer science major currently studying at Duke University. I am primarily interested in the fields of machine learning, big data, and virtual reality. I want to use machine learning and big data to solve challenging problems that we currently face. 
-				</p>
-				<p>
-					Some of the cool things I have done in the past include building a trash/recycling sorter, predicting wait times at Disney, and building a Covolutional Neural Network to predict handwritten digits. Check out all the cool things I have done in the <a class="projectsLink" href="#0" data-menu="projects">projects</a> section!
 
+				<a href="#contact-content" class="cd-scroll">Scroll Down</a>
+			</header>
+
+			<div class="cd-content" id="contact-content">
+				<p>Feel free to contact me about anything! <br> My email is jerry dot pan at duke dot edu</p>
+
+				<p><ul id="social">
+						<li><a target="_blank" href="https://www.facebook.com/MastaPan">Facebook</a></li> |
+						<li><a target="_blank" href="https://github.com/jerryqypan">Github</a></li> |
+						<li><a target="_blank" href="https://www.linkedin.com/in/jerry-pan-44510196">Linkedin</a></li>
+					</ul>
 				</p>
-					
-				<p>
-					In my free time, I like to play video games, watch anime, and take photos. I have played League of Legends for 5 years, but I haven't really played in the past year. Hopefully I can find a new game to replace it as my go to game to play. I also really like to take photos of the places I have visited, there are lots of breathtaking places in the world, and I would like to be able to explore all of them one day. All of the background photos for each section was taken by me (besides the Duke Class of 2019 photo, I was it the photo though!).
-				</p> 
-				
+				<p>This website was made using <a target="_blank" href="https://codyhouse.co/gem/animated-page-transition-2/">this</a> template (I wish I could build this dope website from scratch though!).</p>
 			</div> <!-- .cd-content -->
 		</section> <!-- .cd-section -->
 	</main> <!-- .cd-main -->
 
-	<div id="cd-loading-bar" data-scale="1" class="index"></div> <!-- lateral loading bar -->
+	<div id="cd-loading-bar" data-scale="1" class="contact"></div> <!-- lateral loading bar -->
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->

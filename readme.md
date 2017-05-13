@@ -1,3 +1,0 @@
--load images remotely?
--need to fix button after click
--incorporate blog
